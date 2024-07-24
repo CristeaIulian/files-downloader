@@ -1,0 +1,18 @@
+@import '@theming/sizes';
+@import '@theming/colors';
+
+.data-table {
+  max-width: 1200px;
+  border: $s1 solid $delimiterColor;
+  margin: 100px auto;
+
+  .loading-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: $s6;
+    background-color: $loadingContainerBackgroundColor;
+    border-top: $s1 solid $delimiterColor;
+    padding: $s9;
+  }
+}

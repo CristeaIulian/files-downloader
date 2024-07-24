@@ -1,0 +1,42 @@
+@import '@theming/sizes';
+@import '@theming/colors';
+
+.row-item {
+  display: flex;
+  align-items: center;
+  padding: $s4;
+  line-height: $s8;
+  border-top: $s1 solid $delimiterColor;
+
+  &:hover {
+    background-color: $tableRowHoverColor;
+  }
+
+  &.row-selected {
+    background-color: $tableRowSelectedColor;
+  }
+
+  .checkbox {
+    width: $s13;
+    height: $s8;
+  }
+
+  .name,
+  .device {
+    width: $s17;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding-right: $s4;
+  }
+
+  .path {
+    flex: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding-right: $s10;
+  }
+
+  > .status {
+    width: $s16;
+  }
+}

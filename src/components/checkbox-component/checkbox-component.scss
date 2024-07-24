@@ -1,0 +1,21 @@
+@import '@theming/colors';
+
+.checkbox {
+  &:hover {
+    cursor: pointer;
+  }
+
+  svg .svg-theming {
+    fill: $formElementColor;
+  }
+
+  &.disabled {
+    &:hover {
+      cursor: help;
+    }
+
+    svg .svg-theming {
+      fill: $formElementDisabledColor;
+    }
+  }
+}

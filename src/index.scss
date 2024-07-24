@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@import '@theming/colors.scss';
+@import '@theming/sizes.scss';
+@import '@theming/fonts.scss';
+
+body {
+  font-family: $fontFamily;
+  font-size: $fontSize;
+
+  button {
+    display: flex;
+    align-items: center;
+    column-gap: $s4;
+    background-color: $buttonBackgroundColor;
+    border: $s1 solid $buttonBorderColor;
+    padding: $s3 $s4;
+    border-radius: $s3;
+
+    &:hover:not([disabled]) {
+      background-color: #eee;
+      cursor: pointer;
+    }
+
+    &:disabled {
+      cursor: not-allowed;
+
+      svg .svg-theming {
+        fill: $buttonIconPathDisabledColor;
+      }
+    }
+
+    svg .svg-theming {
+      fill: $buttonIconPathColor;
+    }
+  }
+}

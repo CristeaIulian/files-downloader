@@ -1,0 +1,33 @@
+@import '@theming/sizes';
+@import '@theming/fonts';
+@import '@theming/colors';
+
+.row-header {
+  display: flex;
+  align-items: center;
+  padding: $s4;
+  line-height: $s8;
+  font-size: $fontSizeLg;
+
+  + .row-header {
+    border-top: $s1 solid $delimiterColor;
+  }
+
+  &:hover {
+    background-color: $tableRowHoverColor;
+  }
+
+  .name {
+    width: $s17;
+    margin-left: $s13;
+  }
+  .device {
+    width: $s17;
+  }
+  .path {
+    flex: 1;
+  }
+  > .status {
+    width: $s16;
+  }
+}

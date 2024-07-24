@@ -1,0 +1,22 @@
+@import '@theming/sizes';
+@import '@theming/colors';
+
+.status-container {
+  text-transform: capitalize;
+
+  .status {
+    &::before {
+      content: '';
+      position: absolute;
+      width: $s6;
+      height: $s6;
+      border-radius: 50%;
+      display: inline-block;
+      margin: $s2 0 0 -1 * $s8;
+    }
+
+    &.status-available::before {
+      background-color: $availableColor;
+    }
+  }
+}

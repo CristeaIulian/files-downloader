@@ -1,0 +1,17 @@
+@import '@theming/sizes';
+@import '@theming/colors';
+
+.row-toolbar {
+  display: flex;
+  align-items: center;
+  padding: $s4;
+  border-bottom: $s1 solid $delimiterColor;
+
+  .checkbox {
+    width: $s10;
+  }
+
+  .selected-items {
+    width: $s16;
+  }
+}

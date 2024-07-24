@@ -1,0 +1,32 @@
+@import '@theming/sizes';
+@import '@theming/fonts';
+@import '@theming/colors';
+
+.modal-download-container {
+  .modal-row-header,
+  .modal-row-item {
+    display: flex;
+    align-items: center;
+    padding: $s4;
+    line-height: $s8;
+
+    .device {
+      width: $s17;
+    }
+
+    .path {
+      flex: 1;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      padding-right: $s4;
+    }
+  }
+
+  .modal-row-header {
+    font-size: $fontSizeLg;
+  }
+
+  .modal-row-item {
+    border-top: $s1 solid $delimiterColor;
+  }
+}

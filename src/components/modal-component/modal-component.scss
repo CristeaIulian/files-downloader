@@ -1,0 +1,49 @@
+@import '@theming/sizes.scss';
+@import '@theming/colors.scss';
+
+.modal-backdrop {
+  position: absolute;
+  background-color: $backdropBackgroundColor;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+}
+
+.modal-container {
+  position: absolute;
+  background-color: $modalBackgroundColor;
+  z-index: 11;
+  min-width: 250px;
+  width: 600px;
+  max-width: 90%;
+  height: 400px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 6px $s4 $s3 $modalBoxShadowColor;
+  border: $s1 solid $borderColor;
+
+  .modal-header {
+    padding: $s4;
+    text-transform: uppercase;
+    background-color: $modalTitleBackgroundColor;
+    color: $modalTitleColor;
+  }
+
+  .modal-content {
+    padding: $s4;
+    height: calc(100% - 114px);
+    border-top: $s1 solid $delimiterColor;
+    border-bottom: $s1 solid $delimiterColor;
+  }
+
+  .modal-footer {
+    padding: $s6;
+    display: flex;
+    justify-content: flex-end;
+    column-gap: $s6;
+    background-color: $modalFooterBackgroundColor;
+  }
+}
